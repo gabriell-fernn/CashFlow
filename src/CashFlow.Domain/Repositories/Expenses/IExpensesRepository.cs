@@ -1,6 +1,6 @@
 ﻿using CashFlow.Domain.Entities;
 
-namespace CashFlow.Domain.Repositories
+namespace CashFlow.Domain.Repositories.Expenses
 {
     public interface IExpensesRepository
     {
