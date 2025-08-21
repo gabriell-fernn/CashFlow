@@ -7,6 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Update="PaymentTypes\ResourcePaymentTypeMessages.pt-BR.Designer.cs">
+      <DependentUpon>ResourcePaymentTypeMessages.pt-BR.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="PaymentTypes\ResourcePaymentTypeMessages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ResourcePaymentTypeMessages.resx</DependentUpon>
+    </Compile>
     <Compile Update="Reports\ResourceReportGenerationMessages.pt-BR.Designer.cs">
       <DependentUpon>ResourceReportGenerationMessages.pt-BR.resx</DependentUpon>
       <DesignTime>True</DesignTime>
@@ -20,6 +30,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="PaymentTypes\ResourcePaymentTypeMessages.pt-BR.resx">
+      <LastGenOutput>ResourcePaymentTypeMessages.pt-BR.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PaymentTypes\ResourcePaymentTypeMessages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourcePaymentTypeMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Reports\ResourceReportGenerationMessages.pt-BR.resx">
       <LastGenOutput>ResourceReportGenerationMessages.pt-BR.Designer.cs</LastGenOutput>
       <Generator>ResXFileCodeGenerator</Generator>
