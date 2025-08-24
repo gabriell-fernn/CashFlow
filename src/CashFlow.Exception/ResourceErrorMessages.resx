@@ -145,6 +145,9 @@
     <value>The name cannot be empty.</value>
   </data>
   <data name="INVALID_PASSWORD" xml:space="preserve">
-    <value>The password is invalid</value>
+    <value>Your password must be at least 8 characters long, containing at least one uppercase letter, one lowercase letter, one number, and one special character (!, ?, *, ).</value>
+  </data>
+  <data name="EMAIL_ALREADY_REGISTERED" xml:space="preserve">
+    <value>This e-mail is already registered.</value>
   </data>
 </root>
