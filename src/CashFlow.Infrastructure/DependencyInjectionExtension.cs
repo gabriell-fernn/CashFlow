@@ -48,6 +48,7 @@ namespace CashFlow.Infrastructure
             service.AddScoped<IExpensesUpdateOnlyRepository, ExpensesRepository>();
             service.AddScoped<IUsersReadOnlyRepository, UsersRepository>();
             service.AddScoped<IUserWriteOnlyRepository, UsersRepository>();
+            service.AddScoped<IUserUpdateOnlyRepository, UsersRepository>();
         }
 
         private static void AddDbContext(IServiceCollection service, IConfiguration configuration)
