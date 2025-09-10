@@ -18,6 +18,12 @@ namespace CashFlow.Infrastructure.DataAccess.Repositories
             await _dbContext.Users.AddAsync(user);
         }
 
+        public async Task DeleteAsync(User user)
+        {
+            var userToRemove = await _dbContext.Users.FindAsync(user.Id);
+            _dbContext.Users.Remove(userToRemove!);
+        }
+
         public async Task<bool> ExistsByEmailAsync(string email)
         {
             return await _dbContext.Users.AnyAsync(u => u.Email.Equals(email));

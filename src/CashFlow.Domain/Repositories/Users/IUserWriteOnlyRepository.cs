@@ -5,5 +5,6 @@ namespace CashFlow.Domain.Repositories.Users
     public interface IUserWriteOnlyRepository
     {
         Task AddAsync(User user);
+        Task DeleteAsync(User user);
     }
 }
