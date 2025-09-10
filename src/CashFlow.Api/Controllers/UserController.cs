@@ -1,4 +1,5 @@
-﻿using CashFlow.Application.UseCases.Users.Profile;
+﻿using CashFlow.Application.UseCases.Users.Delete;
+using CashFlow.Application.UseCases.Users.Profile;
 using CashFlow.Application.UseCases.Users.Register;
 using CashFlow.Application.UseCases.Users.Update;
 using CashFlow.Communication.Requests;
